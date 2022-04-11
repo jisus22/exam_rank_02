@@ -12,7 +12,7 @@ char	*get_next_line(int fd)
 	char	*new_a;
 	int		i;
  
-	if (fd < 0 && BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	i = 0;
 	a[i] = 0;
